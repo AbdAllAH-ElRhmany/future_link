@@ -21,7 +21,7 @@ class employeesController extends abstractController
             if(isset($_POST['name'])){
                 $validate = new validation;
                 $validate->input('name')->required();
-                $validate->input('email')->required()->email();
+                $validate->input('email')->required();
                 $validate->input('address')->required();
                 $validate->input('ssn')->required()->inteager();
                 $validate->input('phone')->required();
@@ -79,7 +79,7 @@ class employeesController extends abstractController
             if(isset($_POST['name'])){
                 $validate = new validation;
                 $validate->input('name')->required();
-                $validate->input('email')->required()->email();
+                $validate->input('email')->required();
                 $validate->input('address')->required();
                 $validate->input('ssn')->required()->inteager();
                 $validate->input('phone')->required();

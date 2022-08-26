@@ -33,12 +33,14 @@ function changeProbDom (){
 
 function getProblems(){
     let type = typeSelect.value;
+    // console.log(type);
     let req = new XMLHttpRequest();
     req.open('post', `/problems/getProblems/${type}`, true);
     req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     req.send();
     req.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
+            // console.log(this.responseText);
             if(this.responseText == ''){
                 listProbDom.disabled  = true;
                 listProbDom.innerHTML = ' <option selected hidden value="0">لايوجد اعطال لهذا النوع من الاجهزة</option>'

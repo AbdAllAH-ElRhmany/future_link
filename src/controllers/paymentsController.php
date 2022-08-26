@@ -135,6 +135,20 @@ class paymentsController extends abstractController
             }
         }    
     }
+    public function deleteNMethod($params){
+        $payments = new paymentsModel;
+        if(isset($this->params[0])){
+            $paymentId = ['id'=>$this->params[0]];
+            $c = $payments->getPaymentCount($paymentId);
+            if($c == 0){
+                $this->data['error']="لا يوجد عملية بهذا الرقم";
+            }else{
+                if($payments->delPayment($paymentId)){
+                    (new helper())->redirect("/payments/notmain");
+                }
+            }
+        }    
+    }
     public function ordersMethod(){
         $payments = new paymentsModel;
         $clientType = isset($this->params[2]) ? $this->params[2] : 'off';

@@ -31,7 +31,7 @@ class clientsController extends abstractController
             if(isset($_POST['name'])){
                 $validate = new validation;
                 $validate->input('name')->required();
-                $validate->input('email')->required()->email();
+                $validate->input('email')->required();
                 $validate->input('address')->required();
                 $validate->input('phone')->required();
                 $validate->input('type')->required()->inteager();
@@ -78,7 +78,7 @@ class clientsController extends abstractController
             if(isset($_POST['name'])){
                 $validate = new validation;
                 $validate->input('name')->required();
-                $validate->input('email')->required()->email();
+                $validate->input('email')->required();
                 $validate->input('address')->required();
                 $validate->input('phone')->required();
                 $validate->input('type')->required()->inteager();

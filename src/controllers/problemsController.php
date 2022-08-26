@@ -61,10 +61,11 @@ class problemsController extends abstractController
         }
         $this->view();
     }
-    public function getProblemsMethod($params){
-        $typeId = ['deviceType'=>$params[0]];
+    public function getProblemsMethod($params=[]){
+        $typeId = ['deviceType'=>$params];
         $problems = new problemsModel;
         $list = $problems->getAllProblems($typeId);
+        // var_dump($params);
         foreach($list as $item):
             ?>
                 <option value="<?= $item['problemId']?>"><?= $item['content']?></option>

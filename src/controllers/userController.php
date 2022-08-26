@@ -63,7 +63,7 @@ class userController extends abstractController
         # code...
         if(isset($_POST['email'])){
             $validation = new validation;
-            $validation->input('email')->required()->email();
+            $validation->input('email')->required();
             $err = $validation->showErorr();
             if($err){
                 $this->data['error'] = "برجاء التأكد من صلاحية البيانات المدخلة";

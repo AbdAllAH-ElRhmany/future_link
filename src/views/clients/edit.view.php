@@ -45,19 +45,19 @@
                 <div class="empsContent">
                     <div class="form-group">
                       <label for="name">الاسم<span class="reqInp">*</span></label>
-                      <input type="text" class="form-control" id="name" name="name"  value="<?= $client['name'] ? $client['name'] : '' ?>" placeholder="ادخل الاسم">
+                      <input type="text" class="form-control" required required id="name" name="name"  value="<?= $client['name'] ? $client['name'] : '' ?>" placeholder="ادخل الاسم">
                     </div>
                     <div class="form-group">
                       <label for="phone">رقم الهاتف<span class="reqInp">*</span></label>
-                      <input type="text" class="form-control" id="phone" name="phone" value="<?= $client['phone'] ? $client['phone'] : '' ?>" placeholder="ادخل رقم الهاتف">
+                      <input type="text" class="form-control" required id="phone" name="phone" value="<?= $client['phone'] ? $client['phone'] : '' ?>" placeholder="ادخل رقم الهاتف">
                     </div>
                     <div class="form-group">
                       <label for="email">الايميل<span class="reqInp">*</span></label>
-                      <input type="text" class="form-control" id="email" name="email" value="<?= $client['email'] ? $client['email'] : '' ?>" placeholder="ادخل الايميل">
+                      <input type="email" class="form-control" required id="email" name="email" value="<?= $client['email'] ? $client['email'] : '' ?>" placeholder="ادخل الايميل">
                     </div>
                     <div class="form-group">
                       <label for="address">العنوان<span class="reqInp">*</span></label>
-                      <input type="text" class="form-control" id="address" name="address" value="<?= $client['address'] ? $client['address'] : '' ?>" placeholder="ادخل العنوان">
+                      <input type="text" class="form-control" required id="address" name="address" value="<?= $client['address'] ? $client['address'] : '' ?>" placeholder="ادخل العنوان">
                     </div>
                     <div class="form-group">
                       <label for="type">نوع العميل<span class="reqInp">*</span></label>

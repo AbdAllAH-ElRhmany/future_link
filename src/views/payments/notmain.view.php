@@ -68,7 +68,7 @@
                   <td><?= $payment['createdAt'] ?></td>
                   <td>
                     <a href="/payments/edit/<?= $payment['id'] ?>" title="تعديل التفاصيل"><i class="fas mx-2 fa-edit"></i></a>
-                    <a href="/payments/delete/<?= $payment['id'] ?>" title="حذف العملية"><i class="fas mx-2 fa-trash-alt"></i></a>
+                    <a href="/payments/deleteN/<?= $payment['id'] ?>" title="حذف العملية"><i class="fas mx-2 fa-trash-alt"></i></a>
                   </td>
               </tr>
               <?php endforeach; ?>

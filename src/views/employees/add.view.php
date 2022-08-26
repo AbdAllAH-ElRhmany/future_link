@@ -45,31 +45,31 @@
                 <div class="empsContent">
                     <div class="form-group">
                       <label for="name">الاسم<span class="reqInp">*</span></label>
-                      <input type="text" class="form-control" id="name" name="name" placeholder="ادخل الاسم">
+                      <input type="text" class="form-control" required id="name" name="name" placeholder="ادخل الاسم">
                     </div>
                     <div class="form-group">
                       <label for="ssn">الرقم القومي<span class="reqInp">*</span></label>
-                      <input type="text" class="form-control" id="ssn" name="ssn" placeholder="ادخل الرقم القومي">
+                      <input type="text" class="form-control" required id="ssn" name="ssn" placeholder="ادخل الرقم القومي">
                     </div>
                     <div class="form-group">
                       <label for="phone">رقم الهاتف<span class="reqInp">*</span></label>
-                      <input type="text" class="form-control" id="phone" name="phone" placeholder="ادخل رقم الهاتف">
+                      <input type="text" class="form-control" required id="phone" name="phone" placeholder="ادخل رقم الهاتف">
                     </div>
                     <div class="form-group">
                       <label for="email">الايميل<span class="reqInp">*</span></label>
-                      <input type="text" class="form-control" id="email" name="email" placeholder="ادخل الايميل">
+                      <input type="email" class="form-control" required id="email" name="email" placeholder="ادخل الايميل">
                     </div>
                     <div class="form-group">
                       <label for="address">العنوان<span class="reqInp">*</span></label>
-                      <input type="text" class="form-control" id="address" name="address" placeholder="ادخل العنوان">
+                      <input type="text" class="form-control" required id="address" name="address" placeholder="ادخل العنوان">
                     </div>
                     <div class="form-group">
                       <label for="bdate">تاريخ الميلاد<span class="reqInp">*</span></label>
-                      <input type="date" class="form-control" id="bdate" name="bdate" placeholder="ادخل تاريخ الميلاد">
+                      <input type="date" class="form-control" required id="bdate" name="bdate" placeholder="ادخل تاريخ الميلاد">
                     </div>
                     <div class="form-group">
                       <label for="salary">الراتب<span class="reqInp">*</span></label>
-                      <input type="text" class="form-control" id="salary" name="salary" placeholder="ادخل الراتب">
+                      <input type="text" class="form-control" required id="salary" name="salary" placeholder="ادخل الراتب">
                     </div>
                     <div class="form-group">
                       <label for="job">الوظيفة<span class="reqInp">*</span></label>

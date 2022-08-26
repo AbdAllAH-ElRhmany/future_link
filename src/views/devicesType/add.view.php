@@ -33,7 +33,7 @@
               <?php endif ;?>
                 <div class="form-group">
                 <label for="type">نوع الجهاز<span class="reqInp">*</span></label>
-                <input type="text" class="form-control" id="type" name="type" placeholder="ادخل نوع">
+                <input type="text" class="form-control" required id="type" name="type" placeholder="ادخل نوع">
                 </div>
                 <div class="text-center">
                     <button type="submit" class="btn btn-primary">إضافة</button>
